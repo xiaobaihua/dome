@@ -35,6 +35,7 @@ public class xywy {
 			// 获取最终结果页连接
 			final OneWorkSpace oneWorkSpace = new OneWorkSpace();
 			final TwoWorkSpace twoWorkSpace = new TwoWorkSpace();
+
 			oneWorkSpace.work("1");
 			System.out.println("第一次采集已完结");
 

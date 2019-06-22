@@ -30,7 +30,7 @@ public class test {
 		OutputStream outputStream = null;
 
 		try {
-			final String s = FileUtils.readFileToString(new File("0.json"), Charset.defaultCharset());
+			final String s = FileUtils.readFileToString(new File("4.json"), Charset.defaultCharset());
 			List<WdBean> beans = JSON.parseArray(s, WdBean.class);
 			CodeBeanList.wdBean = (ArrayList<WdBean>) beans;
 			final Integer listSize = Integer.valueOf(ConfUtils.getProperties("ListSize"));
