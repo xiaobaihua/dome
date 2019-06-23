@@ -34,7 +34,7 @@ public class XywyAssemble {
 				result = MyStringUtils.addaHeadCommaChar(result);
 			}
 
-			// 判断首行是非为字符
+			// 判断首行是否为字符
 			final char[] chars = result.toCharArray();
 			if (chars[0] == '，' ) {
 				result = result.replaceFirst("，", "");
@@ -140,6 +140,7 @@ public class XywyAssemble {
 					}
 					s += element.text();
 				}
+
 				// 无用词判断
 				for (String string : CodeBeanList.filteStrings) {
 					s = s.replace(string, "");
@@ -148,13 +149,8 @@ public class XywyAssemble {
 				s = s.replace("吗？", "。");
 				s = s.replace("呢？", "。");
 
-				s = s + bean.getTitle();
-				list.add(s);
-				// 字数判断
-				if (s.length() > max_words_length) {
-					max_words_length = s.length();
-					max_words_index = list.indexOf(s);
-				}
+
+
 				final Elements select = page.select("div.b_askab1");
 				final String first = select.get(0).selectFirst("span").text();
 				final String[] strings = first.split("|");
@@ -163,19 +159,29 @@ public class XywyAssemble {
 				bean.setAge(age);
 				bean.setSex(sex);
 
-				if (s.length() >= 40 && s.length() <= 90) {
-					list.add(s);
+
+				// 如果大于60字直接跳出
+				if (s.length() > 100) {
+					s = s + bean.getTitle();
 					return s;
 				}
+				s = s + bean.getTitle();
+				//
+				list.add(s);
+				// 字数判断
+				if (s.length() > max_words_length) {
+					max_words_length = s.length();
+					max_words_index = list.indexOf(s);
+				}
 			}
-			if (list.size() > 0) {
-				return list.get(max_words_index);
-			}
-			return s;
 		}
 
 		bean.setAge(age);
 		bean.setSex(sex);
+		if (list.size() != 0) {
+			return list.get(max_words_index);
+		}
+
 		return "";
 	}
 }
