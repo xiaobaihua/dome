@@ -23,10 +23,16 @@ public class CodeBeanList {
 	public static final LinkedList<String> reusltTianChongList = new LinkedList<>();
 
 	public static final LinkedList<String> backCommaString = new LinkedList<String>();
+
 	public static final LinkedList<String> aheadCommaString = new LinkedList<String>();
 
 	public static final LinkedList<String> failingChar = new LinkedList<String>();
 
+	// 存放汉子词条， 不带有标点符号
+	public static final LinkedList<String> issueString = new LinkedList<String>();
+
+	// 最终可用词条， 带有标点符号
+	public static final LinkedList<String> issueFilterString = new LinkedList<String>();
 
 
 	public static final HashMap towMap = new HashMap();
@@ -69,44 +75,18 @@ public class CodeBeanList {
 
 
 	static {
-		symbolList.addLast(",");
-		symbolList.addLast(".");
-		symbolList.addLast(":");
-		symbolList.addLast("?");
-		symbolList.addLast("!");
-
 		symbolList.addLast("，");
 		symbolList.addLast("。");
 		symbolList.addLast("：");
 		symbolList.addLast("？");
 		symbolList.addLast("！");
 		symbolList.addLast("、");
-
-		symbolList.addLast(" ,");
+		symbolList.addLast(",");
 		symbolList.addLast(".");
-		symbolList.addLast(" :");
-		symbolList.addLast(" ?");
-		symbolList.addLast(" !");
-
-		symbolList.addLast(" ，");
-		symbolList.addLast(" 。");
-		symbolList.addLast(" ：");
-		symbolList.addLast(" ？");
-		symbolList.addLast(" ！");
-		symbolList.addLast(" 、");
-
-		symbolList.addLast(", ");
-		symbolList.addLast(". ");
-		symbolList.addLast(": ");
-		symbolList.addLast("? ");
-		symbolList.addLast("! ");
-
-		symbolList.addLast("， ");
-		symbolList.addLast("。 ");
-		symbolList.addLast("： ");
-		symbolList.addLast("？ ");
-		symbolList.addLast("！ ");
-		symbolList.addLast("、 ");
+		symbolList.addLast(":");
+		symbolList.addLast("?");
+		symbolList.addLast("!");
+		symbolList.addLast("/");
 
 		wordStrings.addLast("您好");
 		wordStrings.addLast("你好");
@@ -125,6 +105,8 @@ public class CodeBeanList {
 		wordStrings.addLast("祝您生活愉快");
 		wordStrings.addLast("病情分析");
 		wordStrings.addLast("问题分析");
+		wordStrings.addLast("医生询问");
+		wordStrings.addLast("回答");
 
 		reusltTianChongList.add("注意保持心情舒畅。");
 		reusltTianChongList.add("饮食均衡营养。");
@@ -182,6 +164,29 @@ public class CodeBeanList {
 		aheadCommaString.add("但是");
 		aheadCommaString.add("由个人");
 		aheadCommaString.add("可以使用");
+		aheadCommaString.add("是由于");
+		aheadCommaString.add("虽然");
+
+		issueString.add("健康咨询描述");
+		issueString.add("吗");
+		issueString.add("啊");
+		issueString.add("呀");
+		issueString.add("");
+		issueString.add("不知道这是怎么回事");
+		issueString.add("问题描述");
+		issueString.add("您好");
+		issueString.add("你好");
+		issueString.add("医生好");
+		issueString.add("医生你好");
+		issueString.add("医生您好");
+		issueString.add("医生");
+		issueString.add("曾经的治疗情况和效果");
+		issueString.add("谢谢");
+		issueString.add("请问");
+		issueString.add("可以做");
+		issueString.add("请");
+
+
 		for (String  word : wordStrings) {
 			for (String symbo : symbolList ) {
 				filteStrings.addLast(word + symbo);
@@ -190,20 +195,30 @@ public class CodeBeanList {
 
 		// 添加无意义字符
 		for (String s : symbolList) {
+			for (String s1 : issueString) {
+				final String a = s + s1;
+				final String b = s1 + s;
+				issueFilterString.add(a);
+				issueFilterString.add(b);
+			}
+		}
+
+		// 组合过滤字符集
+		for (String s : symbolList) {
 			for (String s1 : symbolList) {
 				// 犹豫是两个一队， 会出现重复
 				final String a = s + s1;
 				final String b = s1 + s;
 				// 不重复两个都添加进去
 				if (!a.equals(b)) {
-					failingChar.add(a);
 					failingChar.add(b);
-				} else {
-					// 重复添加一个
 					failingChar.add(a);
+				} else {
+					// 重复就添加一个
+					failingChar.add(b);
 				}
 
-			}	
+			}
 		}
 	}
 
