@@ -87,6 +87,9 @@ public class CodeBeanList {
 		symbolList.addLast("?");
 		symbolList.addLast("!");
 		symbolList.addLast("/");
+		symbolList.addLast("·");
+		symbolList.addLast("~");
+		symbolList.addLast("`");
 
 		wordStrings.addLast("您好");
 		wordStrings.addLast("你好");
@@ -107,17 +110,24 @@ public class CodeBeanList {
 		wordStrings.addLast("问题分析");
 		wordStrings.addLast("医生询问");
 		wordStrings.addLast("回答");
+		wordStrings.addLast("希望");
+		wordStrings.addLast("能够帮助你");
+		wordStrings.addLast("能够帮助到你");
+		wordStrings.addLast("医生询问");
 
 		reusltTianChongList.add("注意保持心情舒畅。");
 		reusltTianChongList.add("饮食均衡营养。");
 		reusltTianChongList.add("避免偏食。");
+		reusltTianChongList.add("注意休息。");
 		reusltTianChongList.add("避免劳累。");
-		reusltTianChongList.add("尤其要注意爬山爬楼梯。");
+		reusltTianChongList.add("多吃蔬菜水果。");
 		reusltTianChongList.add("避免生冷辛辣食物的摄入。");
 		reusltTianChongList.add("规律生活。");
 		reusltTianChongList.add("建立合理的饮食习惯和结构。");
 		reusltTianChongList.add("多饮温开水。");
 		reusltTianChongList.add("饮食注意清淡。");
+		reusltTianChongList.add("好好调养。");
+
 
 
 		backCommaString.add("检查");
@@ -155,7 +165,6 @@ public class CodeBeanList {
 		aheadCommaString.add("所以");
 		aheadCommaString.add("并在");
 		aheadCommaString.add("避免");
-		aheadCommaString.add("就是");
 		aheadCommaString.add("更加");
 		aheadCommaString.add("具有");
 		aheadCommaString.add("能够");
@@ -166,6 +175,7 @@ public class CodeBeanList {
 		aheadCommaString.add("可以使用");
 		aheadCommaString.add("是由于");
 		aheadCommaString.add("虽然");
+		aheadCommaString.add("也就是");
 
 		issueString.add("健康咨询描述");
 		issueString.add("吗");
@@ -185,6 +195,11 @@ public class CodeBeanList {
 		issueString.add("请问");
 		issueString.add("可以做");
 		issueString.add("请");
+		issueString.add("想得到的帮助");
+		issueString.add("主要症状");
+		issueString.add("患者性别");
+		issueString.add("患者年龄");
+		issueString.add("相关的");
 
 
 		for (String  word : wordStrings) {

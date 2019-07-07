@@ -11,7 +11,7 @@ import com.wd.bean.WdBean;
 import com.wd.listener.ReadListener;
 import com.wd.spider.DemoAutoNewsCrawler;
 import com.wd.spider.FilterCrawler;
-import com.wd.spider.YWBDrawler;
+import com.wd.spider.KSDrawler;
 
 import java.io.*;
 import java.util.*;
@@ -26,7 +26,10 @@ public class Test {
 
 	@org.junit.Test
 	public void a() {
-		System.out.println(MyStringUtils.containsStromgCount("aaaaabbaaa", "b"));
+		String s = MyStringUtils.deleteRepeatSymbol1("怀孕期间的腹痛是很常见的现象腹痛的原因很多有些是怀孕的正常现象有些则代表严重的疾病。怀孕初期的腹痛最常见的原因乃，是由于怀孕后子宫变大子宫韧带受牵扯而引起。，通常这种疼痛并不会很严重可能会造成一些不适，但不会影响日常生活。疼痛的位置并不固定...?");
+		System.out.println(s);
+		final String s1 = MyStringUtils.addLastSymbolI(s);
+		System.out.println(s1);
 	}
 
 	@org.junit.Test
@@ -49,7 +52,7 @@ public class Test {
 //				process(list);
 //			});
 			DemoAutoNewsCrawler one = new DemoAutoNewsCrawler("1aaa", false);
-			YWBDrawler tow = new YWBDrawler("2bbb", false);
+			KSDrawler tow = new KSDrawler("2bbb", false);
 			FilterCrawler filter = new FilterCrawler("3ccc", false);
 
 			for (List<WdBean> beans : parts) {
@@ -86,7 +89,7 @@ public class Test {
 
 
 			// 获取第二个链接url, (10个, 需过滤)
-//			final YWBDrawler tow = new YWBDrawler("2", true);
+//			final KSDrawler tow = new KSDrawler("2", true);
 //			for (WdBean bean : CodeBeanList.WdBean) {
 //				tow.addSeed(bean.getTowUrl());
 //			}

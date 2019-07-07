@@ -42,14 +42,13 @@ public class DemoAutoNewsCrawler extends BreadthCrawler {
 	public void visit(Page page, CrawlDatums next) {
 		final Integer id = Integer.valueOf(page.meta("id"));
 		final WdBean bean = CodeBeanList.wdBean.get(id);
-		final ArrayList<String> urls = new ArrayList<String>();
+
 		i++;
 		Elements s = page.select("div.result");
 		for (Element element : s.select("a.c-showurl")) {
-			urls.add(element.attr("href"));
+			bean.getTowUrl().add(element.attr("href"));
 		}
-		bean.setTowUrl(urls);
-		}
+	}
 
 
 //		for (WdBean bean : CodeBeanList.WdBean) {

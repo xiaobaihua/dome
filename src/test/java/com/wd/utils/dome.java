@@ -21,19 +21,8 @@ public class dome {
 
 	@Test
 	public void a() {
-		final ArrayList<String> s1 = new ArrayList<>();
-		s1.add("1");
-		s1.add("2");
-		s1.add("3");
-		s1.add("4");
-
-		for (String s : s1) {
-			for (String s2 : s1) {
-				System.out.println(s + s2);
-				System.out.println(s2 + s);
-			}
-		}
-
+		final String s = MyStringUtils.addLastSymbolI("String。。。。。");
+		System.out.println(s);
 	}
 
 

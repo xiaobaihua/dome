@@ -18,43 +18,56 @@ import java.util.regex.Pattern;
  */
 
 public class XywyAssemble {
-	public void assemble(List<WdBean> beans) {
+	public List<WdBean> assemble(List<WdBean> beans) {
+		final ArrayList<WdBean> wdBeans = CodeBeanList.wdBean;
+		final ArrayList<WdBean> list = new ArrayList<>();
+
 		for (WdBean bean : beans) {
 			//  过滤无用词汇
 			// 增加或减少长度
-			String issue = getBeanIssue(bean);
+			String issue = MyStringUtils.amendWordLengthTo60And90(getBeanIssue(bean));
+			// 增加或减少长度
 			String result = MyStringUtils.amendWordLengthTo100And130(getBeanResult(bean));
-			final int i = issue.indexOf("。");
-			if (i == -1 || i + 1 != result.length()) {
-				result += "。";
-			}
+			// 给问题添加标题
+			issue += bean.getTitle();
 
+			// 添加标点符号
 			result = MyStringUtils.addaHeadCommaChar(result);
 			if (MyStringUtils.getSymbolCount(result) < 5) {
 				result = MyStringUtils.addaHeadCommaChar(result);
 			}
 
-			// 判断首行是否为字符
-			final char[] chars = result.toCharArray();
-			if (chars[0] == '，' ) {
-				result = result.replaceFirst("，", "");
-			} else if (chars[0] == ',') {
-				result = result.replaceFirst(",", "");
+			// 添加标点符号
+			issue = MyStringUtils.addaHeadCommaChar(issue);
+			if (MyStringUtils.getSymbolCount(issue) < 5) {
+				issue = MyStringUtils.addaHeadCommaChar(issue);
 			}
 
-			// 摘除遗留无意义字符
-			for (String s : CodeBeanList.failingChar) {
-				result = result.replace(s, "。");
-			}
+			// 删除开始字母
+			issue = MyStringUtils.deleteFirstSymbol(issue);
+			result = MyStringUtils.deleteFirstSymbol(result);
+
+			// 剔除重复标点
+			issue = MyStringUtils.deleteRepeatSymbol1(issue);
+			result = MyStringUtils.deleteRepeatSymbol1(result);
+
+			// 添加最终标点
+//			issue = MyStringUtils.addLastSymbolI(issue);
+			result = MyStringUtils.addLastSymbolI(result);
 
 			bean.setIssue(issue);
 			bean.setResult(result);
+			final WdBean wdBean = new WdBean();
+			wdBean.setAge(bean.getAge());
+			wdBean.setSex(bean.getSex());
+			wdBean.setResult(bean.getResult());
+			wdBean.setIssue(bean.getIssue());
+
+			list.add(wdBean);
+			CodeBeanList.wdBean.set(wdBeans.indexOf(bean), null);
 		}
 
-	}
-
-	private void getBeanSex(WdBean bean) {
-
+		return list;
 	}
 
 	private String getBeanResult(WdBean bean) {
@@ -80,6 +93,10 @@ public class XywyAssemble {
 //					if (s.length() < 80 ||( MyStringUtils.containsStromgCount(s, "，") < 5 || MyStringUtils.containsStromgCount(s, ",") < 5) ) {
 //						continue;
 //					}
+
+					if (s.indexOf("想得到的帮助") != -1) {
+						continue;
+					}
 
 					if (s.length() < 80 ) {
 						continue;
@@ -127,29 +144,10 @@ public class XywyAssemble {
 			final Elements i = page.select("div.b_askcont");
 			if (i.size() > 0){
 				final Element issue = i.get(0);
-				final Elements p = issue.select("p");
+				final Elements p = issue.select("p.crazy_new");
 				if (p == null) {
 					continue;
 				}
-				for (Element element : p) {
-					if (element.getElementsByTag("span") != null) {
-						element.getElementsByTag("span").remove();
-					}
-					if (element.getElementsByTag("br") != null) {
-						element.getElementsByTag("br").remove();
-					}
-					s += element.text();
-				}
-
-				// 无用词判断
-				for (String string : CodeBeanList.filteStrings) {
-					s = s.replace(string, "");
-				}
-
-				s = s.replace("吗？", "。");
-				s = s.replace("呢？", "。");
-
-
 
 				final Elements select = page.select("div.b_askab1");
 				final String first = select.get(0).selectFirst("span").text();
@@ -159,14 +157,32 @@ public class XywyAssemble {
 				bean.setAge(age);
 				bean.setSex(sex);
 
+				s = p.text();
+
+
+				s = s.trim();
+				s = s.replace("?", "。");
+				s = s.replace("？", "。");
+				s = s.replace(" ", ",");
+				// 增加最后标点符号
+				s = MyStringUtils.addLastSymbolI(s);
+
+
+				// 无用词判断
+				for (String string : CodeBeanList.issueString) {
+					s = s.replace(string, "");
+				}
+				// 无用标点符号判断
+				for (String string : CodeBeanList.failingChar) {
+					s = s.replace(string, ",");
+				}
+
+				s = s.replace("?", "。");
 
 				// 如果大于60字直接跳出
-				if (s.length() > 100) {
-					s = s + bean.getTitle();
+				if (s.length() > 60 && s.length() < 80) {
 					return s;
 				}
-				s = s + bean.getTitle();
-				//
 				list.add(s);
 				// 字数判断
 				if (s.length() > max_words_length) {

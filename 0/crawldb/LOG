@@ -1,94 +1,94 @@
-2019/06/22-09:00:23.172424 3f94 RocksDB version: 5.14.2
-2019/06/22-09:00:23.172486 3f94 Git sha rocksdb_build_git_sha:@5089e121166c46956a8a21c8ef967f1896c239de@
-2019/06/22-09:00:23.172500 3f94 Compile date Jul  6 2018
-2019/06/22-09:00:23.172509 3f94 DB SUMMARY
-2019/06/22-09:00:23.172737 3f94 CURRENT file:  CURRENT
-2019/06/22-09:00:23.172751 3f94 IDENTITY file:  IDENTITY
-2019/06/22-09:00:23.172849 3f94 MANIFEST file:  MANIFEST-000005 size: 173 Bytes
-2019/06/22-09:00:23.172863 3f94 SST files in C:\Users\Administrator\Desktop\dome\0\crawldb dir, Total Num: 1, files: 000004.sst 
-2019/06/22-09:00:23.172872 3f94 Write Ahead Log file in C:\Users\Administrator\Desktop\dome\0\crawldb: 000006.log size: 0 ; 
-2019/06/22-09:00:23.172880 3f94                         Options.error_if_exists: 0
-2019/06/22-09:00:23.172980 3f94                       Options.create_if_missing: 1
-2019/06/22-09:00:23.172986 3f94                         Options.paranoid_checks: 1
-2019/06/22-09:00:23.172989 3f94                                     Options.env: 0000000032ED3130
-2019/06/22-09:00:23.172993 3f94                                Options.info_log: 0000000035B9D770
-2019/06/22-09:00:23.172996 3f94                Options.max_file_opening_threads: 16
-2019/06/22-09:00:23.173000 3f94                              Options.statistics: 0000000000000000
-2019/06/22-09:00:23.173003 3f94                               Options.use_fsync: 0
-2019/06/22-09:00:23.173007 3f94                       Options.max_log_file_size: 0
-2019/06/22-09:00:23.173010 3f94                  Options.max_manifest_file_size: 18446744073709551615
-2019/06/22-09:00:23.173014 3f94                   Options.log_file_time_to_roll: 0
-2019/06/22-09:00:23.173017 3f94                       Options.keep_log_file_num: 1000
-2019/06/22-09:00:23.173020 3f94                    Options.recycle_log_file_num: 0
-2019/06/22-09:00:23.173024 3f94                         Options.allow_fallocate: 1
-2019/06/22-09:00:23.173027 3f94                        Options.allow_mmap_reads: 0
-2019/06/22-09:00:23.173030 3f94                       Options.allow_mmap_writes: 0
-2019/06/22-09:00:23.173033 3f94                        Options.use_direct_reads: 0
-2019/06/22-09:00:23.173037 3f94                        Options.use_direct_io_for_flush_and_compaction: 0
-2019/06/22-09:00:23.173040 3f94          Options.create_missing_column_families: 0
-2019/06/22-09:00:23.173043 3f94                              Options.db_log_dir: 
-2019/06/22-09:00:23.173047 3f94                                 Options.wal_dir: C:\Users\Administrator\Desktop\dome\0\crawldb
-2019/06/22-09:00:23.173050 3f94                Options.table_cache_numshardbits: 6
-2019/06/22-09:00:23.173054 3f94                      Options.max_subcompactions: 1
-2019/06/22-09:00:23.173057 3f94                  Options.max_background_flushes: -1
-2019/06/22-09:00:23.173060 3f94                         Options.WAL_ttl_seconds: 0
-2019/06/22-09:00:23.173064 3f94                       Options.WAL_size_limit_MB: 0
-2019/06/22-09:00:23.173067 3f94             Options.manifest_preallocation_size: 4194304
-2019/06/22-09:00:23.173070 3f94                     Options.is_fd_close_on_exec: 1
-2019/06/22-09:00:23.173074 3f94                   Options.advise_random_on_open: 1
-2019/06/22-09:00:23.173077 3f94                    Options.db_write_buffer_size: 0
-2019/06/22-09:00:23.173080 3f94                    Options.write_buffer_manager: 0000000035CC63C0
-2019/06/22-09:00:23.173084 3f94         Options.access_hint_on_compaction_start: 1
-2019/06/22-09:00:23.173087 3f94  Options.new_table_reader_for_compaction_inputs: 0
-2019/06/22-09:00:23.173090 3f94           Options.random_access_max_buffer_size: 1048576
-2019/06/22-09:00:23.173094 3f94                      Options.use_adaptive_mutex: 0
-2019/06/22-09:00:23.173097 3f94                            Options.rate_limiter: 0000000000000000
-2019/06/22-09:00:23.173101 3f94     Options.sst_file_manager.rate_bytes_per_sec: 0
-2019/06/22-09:00:23.173104 3f94                       Options.wal_recovery_mode: 2
-2019/06/22-09:00:23.173107 3f94                  Options.enable_thread_tracking: 0
-2019/06/22-09:00:23.173131 3f94                  Options.enable_pipelined_write: 0
-2019/06/22-09:00:23.173136 3f94         Options.allow_concurrent_memtable_write: 1
-2019/06/22-09:00:23.173140 3f94      Options.enable_write_thread_adaptive_yield: 1
-2019/06/22-09:00:23.173143 3f94             Options.write_thread_max_yield_usec: 100
-2019/06/22-09:00:23.173146 3f94            Options.write_thread_slow_yield_usec: 3
-2019/06/22-09:00:23.173150 3f94                               Options.row_cache: None
-2019/06/22-09:00:23.173153 3f94                              Options.wal_filter: None
-2019/06/22-09:00:23.173157 3f94             Options.avoid_flush_during_recovery: 0
-2019/06/22-09:00:23.173160 3f94             Options.allow_ingest_behind: 0
-2019/06/22-09:00:23.173163 3f94             Options.preserve_deletes: 0
-2019/06/22-09:00:23.173166 3f94             Options.two_write_queues: 0
-2019/06/22-09:00:23.173169 3f94             Options.manual_wal_flush: 0
-2019/06/22-09:00:23.173173 3f94             Options.max_background_jobs: 2
-2019/06/22-09:00:23.173176 3f94             Options.max_background_compactions: -1
-2019/06/22-09:00:23.173179 3f94             Options.avoid_flush_during_shutdown: 0
-2019/06/22-09:00:23.173182 3f94           Options.writable_file_max_buffer_size: 1048576
-2019/06/22-09:00:23.173186 3f94             Options.delayed_write_rate : 16777216
-2019/06/22-09:00:23.173189 3f94             Options.max_total_wal_size: 0
-2019/06/22-09:00:23.173192 3f94             Options.delete_obsolete_files_period_micros: 21600000000
-2019/06/22-09:00:23.173196 3f94                   Options.stats_dump_period_sec: 600
-2019/06/22-09:00:23.173199 3f94                          Options.max_open_files: -1
-2019/06/22-09:00:23.173202 3f94                          Options.bytes_per_sync: 0
-2019/06/22-09:00:23.173205 3f94                      Options.wal_bytes_per_sync: 0
-2019/06/22-09:00:23.173209 3f94       Options.compaction_readahead_size: 0
-2019/06/22-09:00:23.173212 3f94 Compression algorithms supported:
-2019/06/22-09:00:23.173216 3f94 	kZSTD supported: 0
-2019/06/22-09:00:23.173219 3f94 	kSnappyCompression supported: 0
-2019/06/22-09:00:23.173222 3f94 	kBZip2Compression supported: 0
-2019/06/22-09:00:23.173225 3f94 	kZlibCompression supported: 0
-2019/06/22-09:00:23.173239 3f94 	kLZ4Compression supported: 0
-2019/06/22-09:00:23.173247 3f94 	kXpressCompression supported: 0
-2019/06/22-09:00:23.173250 3f94 	kLZ4HCCompression supported: 0
-2019/06/22-09:00:23.173254 3f94 	kZSTDNotFinalCompression supported: 0
-2019/06/22-09:00:23.173258 3f94 Fast CRC32 supported: Supported on x86
-2019/06/22-09:00:23.174362 3f94 [c:\users\aretter\code\rocksdb\db\version_set.cc:3085] Recovering from manifest file: MANIFEST-000005
-2019/06/22-09:00:23.174565 3f94 [c:\users\aretter\code\rocksdb\db\column_family.cc:475] --------------- Options for column family [default]:
-2019/06/22-09:00:23.174573 3f94               Options.comparator: leveldb.BytewiseComparator
-2019/06/22-09:00:23.174577 3f94           Options.merge_operator: None
-2019/06/22-09:00:23.174580 3f94        Options.compaction_filter: None
-2019/06/22-09:00:23.174583 3f94        Options.compaction_filter_factory: None
-2019/06/22-09:00:23.174587 3f94         Options.memtable_factory: SkipListFactory
-2019/06/22-09:00:23.174590 3f94            Options.table_factory: BlockBasedTable
-2019/06/22-09:00:23.174625 3f94            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (00000000358F1FD0)
+2019/07/06-22:25:41.666144 c64 RocksDB version: 5.14.2
+2019/07/06-22:25:41.666198 c64 Git sha rocksdb_build_git_sha:@5089e121166c46956a8a21c8ef967f1896c239de@
+2019/07/06-22:25:41.666210 c64 Compile date Jul  6 2018
+2019/07/06-22:25:41.666218 c64 DB SUMMARY
+2019/07/06-22:25:41.666446 c64 CURRENT file:  CURRENT
+2019/07/06-22:25:41.666459 c64 IDENTITY file:  IDENTITY
+2019/07/06-22:25:41.666555 c64 MANIFEST file:  MANIFEST-000017 size: 269 Bytes
+2019/07/06-22:25:41.666569 c64 SST files in C:\Users\Administrator\Desktop\dome\0\crawldb dir, Total Num: 2, files: 000004.sst 000013.sst 
+2019/07/06-22:25:41.666577 c64 Write Ahead Log file in C:\Users\Administrator\Desktop\dome\0\crawldb: 000018.log size: 36922 ; 
+2019/07/06-22:25:41.666585 c64                         Options.error_if_exists: 0
+2019/07/06-22:25:41.666683 c64                       Options.create_if_missing: 1
+2019/07/06-22:25:41.666691 c64                         Options.paranoid_checks: 1
+2019/07/06-22:25:41.666694 c64                                     Options.env: 0000000000C8F370
+2019/07/06-22:25:41.666698 c64                                Options.info_log: 0000000035BB20A0
+2019/07/06-22:25:41.666701 c64                Options.max_file_opening_threads: 16
+2019/07/06-22:25:41.666705 c64                              Options.statistics: 0000000000000000
+2019/07/06-22:25:41.666708 c64                               Options.use_fsync: 0
+2019/07/06-22:25:41.666712 c64                       Options.max_log_file_size: 0
+2019/07/06-22:25:41.666715 c64                  Options.max_manifest_file_size: 18446744073709551615
+2019/07/06-22:25:41.666719 c64                   Options.log_file_time_to_roll: 0
+2019/07/06-22:25:41.666722 c64                       Options.keep_log_file_num: 1000
+2019/07/06-22:25:41.666725 c64                    Options.recycle_log_file_num: 0
+2019/07/06-22:25:41.666729 c64                         Options.allow_fallocate: 1
+2019/07/06-22:25:41.666732 c64                        Options.allow_mmap_reads: 0
+2019/07/06-22:25:41.666735 c64                       Options.allow_mmap_writes: 0
+2019/07/06-22:25:41.666738 c64                        Options.use_direct_reads: 0
+2019/07/06-22:25:41.666742 c64                        Options.use_direct_io_for_flush_and_compaction: 0
+2019/07/06-22:25:41.666745 c64          Options.create_missing_column_families: 0
+2019/07/06-22:25:41.666748 c64                              Options.db_log_dir: 
+2019/07/06-22:25:41.666752 c64                                 Options.wal_dir: C:\Users\Administrator\Desktop\dome\0\crawldb
+2019/07/06-22:25:41.666755 c64                Options.table_cache_numshardbits: 6
+2019/07/06-22:25:41.666758 c64                      Options.max_subcompactions: 1
+2019/07/06-22:25:41.666762 c64                  Options.max_background_flushes: -1
+2019/07/06-22:25:41.666765 c64                         Options.WAL_ttl_seconds: 0
+2019/07/06-22:25:41.666768 c64                       Options.WAL_size_limit_MB: 0
+2019/07/06-22:25:41.666772 c64             Options.manifest_preallocation_size: 4194304
+2019/07/06-22:25:41.666775 c64                     Options.is_fd_close_on_exec: 1
+2019/07/06-22:25:41.666778 c64                   Options.advise_random_on_open: 1
+2019/07/06-22:25:41.666782 c64                    Options.db_write_buffer_size: 0
+2019/07/06-22:25:41.666785 c64                    Options.write_buffer_manager: 0000000035BC4150
+2019/07/06-22:25:41.666788 c64         Options.access_hint_on_compaction_start: 1
+2019/07/06-22:25:41.666792 c64  Options.new_table_reader_for_compaction_inputs: 0
+2019/07/06-22:25:41.666795 c64           Options.random_access_max_buffer_size: 1048576
+2019/07/06-22:25:41.666798 c64                      Options.use_adaptive_mutex: 0
+2019/07/06-22:25:41.666801 c64                            Options.rate_limiter: 0000000000000000
+2019/07/06-22:25:41.666805 c64     Options.sst_file_manager.rate_bytes_per_sec: 0
+2019/07/06-22:25:41.666808 c64                       Options.wal_recovery_mode: 2
+2019/07/06-22:25:41.666811 c64                  Options.enable_thread_tracking: 0
+2019/07/06-22:25:41.666815 c64                  Options.enable_pipelined_write: 0
+2019/07/06-22:25:41.666837 c64         Options.allow_concurrent_memtable_write: 1
+2019/07/06-22:25:41.666842 c64      Options.enable_write_thread_adaptive_yield: 1
+2019/07/06-22:25:41.666845 c64             Options.write_thread_max_yield_usec: 100
+2019/07/06-22:25:41.666849 c64            Options.write_thread_slow_yield_usec: 3
+2019/07/06-22:25:41.666852 c64                               Options.row_cache: None
+2019/07/06-22:25:41.666855 c64                              Options.wal_filter: None
+2019/07/06-22:25:41.666859 c64             Options.avoid_flush_during_recovery: 0
+2019/07/06-22:25:41.666862 c64             Options.allow_ingest_behind: 0
+2019/07/06-22:25:41.666865 c64             Options.preserve_deletes: 0
+2019/07/06-22:25:41.666868 c64             Options.two_write_queues: 0
+2019/07/06-22:25:41.666871 c64             Options.manual_wal_flush: 0
+2019/07/06-22:25:41.666875 c64             Options.max_background_jobs: 2
+2019/07/06-22:25:41.666878 c64             Options.max_background_compactions: -1
+2019/07/06-22:25:41.666881 c64             Options.avoid_flush_during_shutdown: 0
+2019/07/06-22:25:41.666884 c64           Options.writable_file_max_buffer_size: 1048576
+2019/07/06-22:25:41.666888 c64             Options.delayed_write_rate : 16777216
+2019/07/06-22:25:41.666891 c64             Options.max_total_wal_size: 0
+2019/07/06-22:25:41.666894 c64             Options.delete_obsolete_files_period_micros: 21600000000
+2019/07/06-22:25:41.666898 c64                   Options.stats_dump_period_sec: 600
+2019/07/06-22:25:41.666901 c64                          Options.max_open_files: -1
+2019/07/06-22:25:41.666904 c64                          Options.bytes_per_sync: 0
+2019/07/06-22:25:41.666908 c64                      Options.wal_bytes_per_sync: 0
+2019/07/06-22:25:41.666911 c64       Options.compaction_readahead_size: 0
+2019/07/06-22:25:41.666914 c64 Compression algorithms supported:
+2019/07/06-22:25:41.666918 c64 	kZSTD supported: 0
+2019/07/06-22:25:41.666921 c64 	kSnappyCompression supported: 0
+2019/07/06-22:25:41.666924 c64 	kBZip2Compression supported: 0
+2019/07/06-22:25:41.666927 c64 	kZlibCompression supported: 0
+2019/07/06-22:25:41.666930 c64 	kLZ4Compression supported: 0
+2019/07/06-22:25:41.666933 c64 	kXpressCompression supported: 0
+2019/07/06-22:25:41.666936 c64 	kLZ4HCCompression supported: 0
+2019/07/06-22:25:41.666939 c64 	kZSTDNotFinalCompression supported: 0
+2019/07/06-22:25:41.666944 c64 Fast CRC32 supported: Supported on x86
+2019/07/06-22:25:41.668036 c64 [c:\users\aretter\code\rocksdb\db\version_set.cc:3085] Recovering from manifest file: MANIFEST-000017
+2019/07/06-22:25:41.668253 c64 [c:\users\aretter\code\rocksdb\db\column_family.cc:475] --------------- Options for column family [default]:
+2019/07/06-22:25:41.668261 c64               Options.comparator: leveldb.BytewiseComparator
+2019/07/06-22:25:41.668264 c64           Options.merge_operator: None
+2019/07/06-22:25:41.668267 c64        Options.compaction_filter: None
+2019/07/06-22:25:41.668270 c64        Options.compaction_filter_factory: None
+2019/07/06-22:25:41.668274 c64         Options.memtable_factory: SkipListFactory
+2019/07/06-22:25:41.668277 c64            Options.table_factory: BlockBasedTable
+2019/07/06-22:25:41.668309 c64            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (0000000035802000)
   cache_index_and_filter_blocks: 0
   cache_index_and_filter_blocks_with_high_priority: 0
   pin_l0_filter_and_index_blocks_in_cache: 0
@@ -96,7 +96,7 @@
   hash_index_allow_collision: 1
   checksum: 1
   no_block_cache: 0
-  block_cache: 000000003582E4D0
+  block_cache: 0000000035B94780
   block_cache_name: LRUCache
   block_cache_options:
     capacity : 8388608
@@ -119,69 +119,72 @@
   format_version: 2
   enable_index_compression: 1
   block_align: 0
-2019/06/22-09:00:23.174657 3f94        Options.write_buffer_size: 67108864
-2019/06/22-09:00:23.174662 3f94  Options.max_write_buffer_number: 2
-2019/06/22-09:00:23.174666 3f94          Options.compression: NoCompression
-2019/06/22-09:00:23.174669 3f94                  Options.bottommost_compression: Disabled
-2019/06/22-09:00:23.174672 3f94       Options.prefix_extractor: nullptr
-2019/06/22-09:00:23.174676 3f94   Options.memtable_insert_with_hint_prefix_extractor: nullptr
-2019/06/22-09:00:23.174679 3f94             Options.num_levels: 7
-2019/06/22-09:00:23.174682 3f94        Options.min_write_buffer_number_to_merge: 1
-2019/06/22-09:00:23.174685 3f94     Options.max_write_buffer_number_to_maintain: 0
-2019/06/22-09:00:23.174689 3f94            Options.compression_opts.window_bits: -14
-2019/06/22-09:00:23.174692 3f94                  Options.compression_opts.level: -1
-2019/06/22-09:00:23.174695 3f94               Options.compression_opts.strategy: 0
-2019/06/22-09:00:23.174699 3f94         Options.compression_opts.max_dict_bytes: 0
-2019/06/22-09:00:23.174702 3f94         Options.compression_opts.zstd_max_train_bytes: 0
-2019/06/22-09:00:23.174705 3f94      Options.level0_file_num_compaction_trigger: 4
-2019/06/22-09:00:23.174709 3f94          Options.level0_slowdown_writes_trigger: 20
-2019/06/22-09:00:23.174712 3f94              Options.level0_stop_writes_trigger: 36
-2019/06/22-09:00:23.174715 3f94                   Options.target_file_size_base: 67108864
-2019/06/22-09:00:23.174719 3f94             Options.target_file_size_multiplier: 1
-2019/06/22-09:00:23.174722 3f94                Options.max_bytes_for_level_base: 268435456
-2019/06/22-09:00:23.174725 3f94 Options.level_compaction_dynamic_level_bytes: 0
-2019/06/22-09:00:23.174728 3f94          Options.max_bytes_for_level_multiplier: 10.000000
-2019/06/22-09:00:23.174733 3f94 Options.max_bytes_for_level_multiplier_addtl[0]: 1
-2019/06/22-09:00:23.174736 3f94 Options.max_bytes_for_level_multiplier_addtl[1]: 1
-2019/06/22-09:00:23.174740 3f94 Options.max_bytes_for_level_multiplier_addtl[2]: 1
-2019/06/22-09:00:23.174743 3f94 Options.max_bytes_for_level_multiplier_addtl[3]: 1
-2019/06/22-09:00:23.174746 3f94 Options.max_bytes_for_level_multiplier_addtl[4]: 1
-2019/06/22-09:00:23.174750 3f94 Options.max_bytes_for_level_multiplier_addtl[5]: 1
-2019/06/22-09:00:23.174753 3f94 Options.max_bytes_for_level_multiplier_addtl[6]: 1
-2019/06/22-09:00:23.174756 3f94       Options.max_sequential_skip_in_iterations: 8
-2019/06/22-09:00:23.174759 3f94                    Options.max_compaction_bytes: 1677721600
-2019/06/22-09:00:23.174763 3f94                        Options.arena_block_size: 8388608
-2019/06/22-09:00:23.174766 3f94   Options.soft_pending_compaction_bytes_limit: 68719476736
-2019/06/22-09:00:23.174769 3f94   Options.hard_pending_compaction_bytes_limit: 274877906944
-2019/06/22-09:00:23.174773 3f94       Options.rate_limit_delay_max_milliseconds: 100
-2019/06/22-09:00:23.174776 3f94                Options.disable_auto_compactions: 0
-2019/06/22-09:00:23.174781 3f94                        Options.compaction_style: kCompactionStyleLevel
-2019/06/22-09:00:23.174785 3f94                          Options.compaction_pri: kByCompensatedSize
-2019/06/22-09:00:23.174789 3f94 Options.compaction_options_universal.size_ratio: 1
-2019/06/22-09:00:23.174792 3f94 Options.compaction_options_universal.min_merge_width: 2
-2019/06/22-09:00:23.174795 3f94 Options.compaction_options_universal.max_merge_width: 4294967295
-2019/06/22-09:00:23.174799 3f94 Options.compaction_options_universal.max_size_amplification_percent: 200
-2019/06/22-09:00:23.174802 3f94 Options.compaction_options_universal.compression_size_percent: -1
-2019/06/22-09:00:23.174806 3f94 Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
-2019/06/22-09:00:23.174810 3f94 Options.compaction_options_fifo.max_table_files_size: 1073741824
-2019/06/22-09:00:23.174830 3f94 Options.compaction_options_fifo.allow_compaction: 0
-2019/06/22-09:00:23.174835 3f94 Options.compaction_options_fifo.ttl: 0
-2019/06/22-09:00:23.174838 3f94                   Options.table_properties_collectors: 
-2019/06/22-09:00:23.174842 3f94                   Options.inplace_update_support: 0
-2019/06/22-09:00:23.174845 3f94                 Options.inplace_update_num_locks: 10000
-2019/06/22-09:00:23.174848 3f94               Options.memtable_prefix_bloom_size_ratio: 0.000000
-2019/06/22-09:00:23.174852 3f94   Options.memtable_huge_page_size: 0
-2019/06/22-09:00:23.174855 3f94                           Options.bloom_locality: 0
-2019/06/22-09:00:23.174858 3f94                    Options.max_successive_merges: 0
-2019/06/22-09:00:23.174862 3f94                Options.optimize_filters_for_hits: 0
-2019/06/22-09:00:23.174865 3f94                Options.paranoid_file_checks: 0
-2019/06/22-09:00:23.174868 3f94                Options.force_consistency_checks: 0
-2019/06/22-09:00:23.174872 3f94                Options.report_bg_io_stats: 0
-2019/06/22-09:00:23.174875 3f94                               Options.ttl: 0
-2019/06/22-09:00:23.176050 3f94 [c:\users\aretter\code\rocksdb\db\version_set.cc:3361] Recovered from manifest file:C:\Users\Administrator\Desktop\dome\0\crawldb/MANIFEST-000005 succeeded,manifest_file_number is 5, next_file_number is 7, last_sequence is 9726, log_number is 0,prev_log_number is 0,max_column_family is 0,min_log_number_to_keep is 0
-2019/06/22-09:00:23.176063 3f94 [c:\users\aretter\code\rocksdb\db\version_set.cc:3369] Column family [default] (ID 0), log number is 4
-2019/06/22-09:00:23.176625 3f94 EVENT_LOG_v1 {"time_micros": 1561165223176616, "job": 1, "event": "recovery_started", "log_files": [6]}
-2019/06/22-09:00:23.176634 3f94 [c:\users\aretter\code\rocksdb\db\db_impl_open.cc:551] Recovering log #6 mode 2
-2019/06/22-09:00:23.176794 3f94 [c:\users\aretter\code\rocksdb\db\version_set.cc:2847] Creating manifest 8
-2019/06/22-09:00:23.182188 3f94 EVENT_LOG_v1 {"time_micros": 1561165223182180, "job": 1, "event": "recovery_finished"}
-2019/06/22-09:00:23.187933 3f94 [c:\users\aretter\code\rocksdb\db\db_impl_open.cc:1219] DB pointer 0000000035C9E270
+2019/07/06-22:25:41.668340 c64        Options.write_buffer_size: 67108864
+2019/07/06-22:25:41.668345 c64  Options.max_write_buffer_number: 2
+2019/07/06-22:25:41.668349 c64          Options.compression: NoCompression
+2019/07/06-22:25:41.668352 c64                  Options.bottommost_compression: Disabled
+2019/07/06-22:25:41.668355 c64       Options.prefix_extractor: nullptr
+2019/07/06-22:25:41.668358 c64   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2019/07/06-22:25:41.668362 c64             Options.num_levels: 7
+2019/07/06-22:25:41.668365 c64        Options.min_write_buffer_number_to_merge: 1
+2019/07/06-22:25:41.668368 c64     Options.max_write_buffer_number_to_maintain: 0
+2019/07/06-22:25:41.668372 c64            Options.compression_opts.window_bits: -14
+2019/07/06-22:25:41.668375 c64                  Options.compression_opts.level: -1
+2019/07/06-22:25:41.668378 c64               Options.compression_opts.strategy: 0
+2019/07/06-22:25:41.668381 c64         Options.compression_opts.max_dict_bytes: 0
+2019/07/06-22:25:41.668385 c64         Options.compression_opts.zstd_max_train_bytes: 0
+2019/07/06-22:25:41.668388 c64      Options.level0_file_num_compaction_trigger: 4
+2019/07/06-22:25:41.668391 c64          Options.level0_slowdown_writes_trigger: 20
+2019/07/06-22:25:41.668395 c64              Options.level0_stop_writes_trigger: 36
+2019/07/06-22:25:41.668398 c64                   Options.target_file_size_base: 67108864
+2019/07/06-22:25:41.668401 c64             Options.target_file_size_multiplier: 1
+2019/07/06-22:25:41.668405 c64                Options.max_bytes_for_level_base: 268435456
+2019/07/06-22:25:41.668408 c64 Options.level_compaction_dynamic_level_bytes: 0
+2019/07/06-22:25:41.668411 c64          Options.max_bytes_for_level_multiplier: 10.000000
+2019/07/06-22:25:41.668415 c64 Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2019/07/06-22:25:41.668419 c64 Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2019/07/06-22:25:41.668422 c64 Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2019/07/06-22:25:41.668425 c64 Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2019/07/06-22:25:41.668429 c64 Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2019/07/06-22:25:41.668432 c64 Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2019/07/06-22:25:41.668435 c64 Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2019/07/06-22:25:41.668438 c64       Options.max_sequential_skip_in_iterations: 8
+2019/07/06-22:25:41.668442 c64                    Options.max_compaction_bytes: 1677721600
+2019/07/06-22:25:41.668445 c64                        Options.arena_block_size: 8388608
+2019/07/06-22:25:41.668448 c64   Options.soft_pending_compaction_bytes_limit: 68719476736
+2019/07/06-22:25:41.668452 c64   Options.hard_pending_compaction_bytes_limit: 274877906944
+2019/07/06-22:25:41.668455 c64       Options.rate_limit_delay_max_milliseconds: 100
+2019/07/06-22:25:41.668458 c64                Options.disable_auto_compactions: 0
+2019/07/06-22:25:41.668463 c64                        Options.compaction_style: kCompactionStyleLevel
+2019/07/06-22:25:41.668467 c64                          Options.compaction_pri: kByCompensatedSize
+2019/07/06-22:25:41.668471 c64 Options.compaction_options_universal.size_ratio: 1
+2019/07/06-22:25:41.668474 c64 Options.compaction_options_universal.min_merge_width: 2
+2019/07/06-22:25:41.668477 c64 Options.compaction_options_universal.max_merge_width: 4294967295
+2019/07/06-22:25:41.668481 c64 Options.compaction_options_universal.max_size_amplification_percent: 200
+2019/07/06-22:25:41.668484 c64 Options.compaction_options_universal.compression_size_percent: -1
+2019/07/06-22:25:41.668488 c64 Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2019/07/06-22:25:41.668491 c64 Options.compaction_options_fifo.max_table_files_size: 1073741824
+2019/07/06-22:25:41.668495 c64 Options.compaction_options_fifo.allow_compaction: 0
+2019/07/06-22:25:41.668499 c64 Options.compaction_options_fifo.ttl: 0
+2019/07/06-22:25:41.668503 c64                   Options.table_properties_collectors: 
+2019/07/06-22:25:41.668506 c64                   Options.inplace_update_support: 0
+2019/07/06-22:25:41.668509 c64                 Options.inplace_update_num_locks: 10000
+2019/07/06-22:25:41.668513 c64               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2019/07/06-22:25:41.668516 c64   Options.memtable_huge_page_size: 0
+2019/07/06-22:25:41.668519 c64                           Options.bloom_locality: 0
+2019/07/06-22:25:41.668523 c64                    Options.max_successive_merges: 0
+2019/07/06-22:25:41.668526 c64                Options.optimize_filters_for_hits: 0
+2019/07/06-22:25:41.668529 c64                Options.paranoid_file_checks: 0
+2019/07/06-22:25:41.668532 c64                Options.force_consistency_checks: 0
+2019/07/06-22:25:41.668535 c64                Options.report_bg_io_stats: 0
+2019/07/06-22:25:41.668539 c64                               Options.ttl: 0
+2019/07/06-22:25:41.669344 c64 [c:\users\aretter\code\rocksdb\db\version_set.cc:3361] Recovered from manifest file:C:\Users\Administrator\Desktop\dome\0\crawldb/MANIFEST-000017 succeeded,manifest_file_number is 17, next_file_number is 19, last_sequence is 2154, log_number is 0,prev_log_number is 0,max_column_family is 0,min_log_number_to_keep is 0
+2019/07/06-22:25:41.669356 c64 [c:\users\aretter\code\rocksdb\db\version_set.cc:3369] Column family [default] (ID 0), log number is 16
+2019/07/06-22:25:41.669918 c64 EVENT_LOG_v1 {"time_micros": 1562423141669910, "job": 1, "event": "recovery_started", "log_files": [18]}
+2019/07/06-22:25:41.669926 c64 [c:\users\aretter\code\rocksdb\db\db_impl_open.cc:551] Recovering log #18 mode 2
+2019/07/06-22:25:41.672447 c64 EVENT_LOG_v1 {"time_micros": 1562423141672433, "cf_name": "default", "job": 1, "event": "table_file_creation", "file_number": 19, "file_size": 28392, "table_properties": {"data_size": 27163, "index_size": 316, "filter_size": 0, "raw_key_size": 12044, "raw_average_key_size": 44, "raw_value_size": 21119, "raw_average_value_size": 78, "num_data_blocks": 7, "num_entries": 268, "filter_policy_name": "", "kDeletedKeys": "0", "kMergeOperands": "0"}}
+2019/07/06-22:25:41.672566 c64 [c:\users\aretter\code\rocksdb\db\version_set.cc:2847] Creating manifest 20
+2019/07/06-22:25:41.677750 c64 EVENT_LOG_v1 {"time_micros": 1562423141677744, "job": 1, "event": "recovery_finished"}
+2019/07/06-22:25:41.688870 c64 [c:\users\aretter\code\rocksdb\db\db_impl_open.cc:1219] DB pointer 0000000035BE3560
+2019/07/06-22:25:42.666502 3714 [c:\users\aretter\code\rocksdb\db\db_impl.cc:252] Shutdown: canceling all background work
+2019/07/06-22:25:42.689597 3714 [c:\users\aretter\code\rocksdb\db\db_impl.cc:398] Shutdown complete

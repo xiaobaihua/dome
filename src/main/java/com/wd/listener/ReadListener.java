@@ -22,8 +22,12 @@ public class ReadListener extends AnalysisEventListener{
 			final WdBean wd = new WdBean();
 			wd.setTitle(l.get(2));
 			wd.setCxeclRowIndex(context.getCurrentRowNum().toString());
-			wd.setOneUrl(ConfUtils.getProperties("site")+wd.getTitle() + "有问必答快速问医生");
+			String s = ConfUtils.getProperties("site")+wd.getTitle() + "有问必答快速问医生";
 
+			for (int i = 0; i < 2; i++) {
+				wd.getOneUrl().add(s + "&pn=" + i * 10);
+			}
+			System.out.println(s);
 
 			CodeBeanList.wdBean.add(wd);
 		}

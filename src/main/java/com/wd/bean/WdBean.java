@@ -12,7 +12,7 @@ import java.util.List;
  */
 public class WdBean {
 	private String cxeclRowIndex;
-	private String oneUrl;
+	private ArrayList<String> oneUrl = new ArrayList<String>();
 	private List<String> towUrl = new ArrayList<String>();
 	private List<String> threeUrl  = new ArrayList<String>();
 
@@ -31,11 +31,11 @@ public class WdBean {
 		this.cxeclRowIndex = cxeclRowIndex;
 	}
 
-	public String getOneUrl() {
+	public ArrayList<String> getOneUrl() {
 		return oneUrl;
 	}
 
-	public void setOneUrl(String oneUrl) {
+	public void setOneUrl(ArrayList<String> oneUrl) {
 		this.oneUrl = oneUrl;
 	}
 
