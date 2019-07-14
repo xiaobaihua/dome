@@ -1,94 +1,94 @@
-2019/07/06-22:25:41.666144 c64 RocksDB version: 5.14.2
-2019/07/06-22:25:41.666198 c64 Git sha rocksdb_build_git_sha:@5089e121166c46956a8a21c8ef967f1896c239de@
-2019/07/06-22:25:41.666210 c64 Compile date Jul  6 2018
-2019/07/06-22:25:41.666218 c64 DB SUMMARY
-2019/07/06-22:25:41.666446 c64 CURRENT file:  CURRENT
-2019/07/06-22:25:41.666459 c64 IDENTITY file:  IDENTITY
-2019/07/06-22:25:41.666555 c64 MANIFEST file:  MANIFEST-000017 size: 269 Bytes
-2019/07/06-22:25:41.666569 c64 SST files in C:\Users\Administrator\Desktop\dome\0\crawldb dir, Total Num: 2, files: 000004.sst 000013.sst 
-2019/07/06-22:25:41.666577 c64 Write Ahead Log file in C:\Users\Administrator\Desktop\dome\0\crawldb: 000018.log size: 36922 ; 
-2019/07/06-22:25:41.666585 c64                         Options.error_if_exists: 0
-2019/07/06-22:25:41.666683 c64                       Options.create_if_missing: 1
-2019/07/06-22:25:41.666691 c64                         Options.paranoid_checks: 1
-2019/07/06-22:25:41.666694 c64                                     Options.env: 0000000000C8F370
-2019/07/06-22:25:41.666698 c64                                Options.info_log: 0000000035BB20A0
-2019/07/06-22:25:41.666701 c64                Options.max_file_opening_threads: 16
-2019/07/06-22:25:41.666705 c64                              Options.statistics: 0000000000000000
-2019/07/06-22:25:41.666708 c64                               Options.use_fsync: 0
-2019/07/06-22:25:41.666712 c64                       Options.max_log_file_size: 0
-2019/07/06-22:25:41.666715 c64                  Options.max_manifest_file_size: 18446744073709551615
-2019/07/06-22:25:41.666719 c64                   Options.log_file_time_to_roll: 0
-2019/07/06-22:25:41.666722 c64                       Options.keep_log_file_num: 1000
-2019/07/06-22:25:41.666725 c64                    Options.recycle_log_file_num: 0
-2019/07/06-22:25:41.666729 c64                         Options.allow_fallocate: 1
-2019/07/06-22:25:41.666732 c64                        Options.allow_mmap_reads: 0
-2019/07/06-22:25:41.666735 c64                       Options.allow_mmap_writes: 0
-2019/07/06-22:25:41.666738 c64                        Options.use_direct_reads: 0
-2019/07/06-22:25:41.666742 c64                        Options.use_direct_io_for_flush_and_compaction: 0
-2019/07/06-22:25:41.666745 c64          Options.create_missing_column_families: 0
-2019/07/06-22:25:41.666748 c64                              Options.db_log_dir: 
-2019/07/06-22:25:41.666752 c64                                 Options.wal_dir: C:\Users\Administrator\Desktop\dome\0\crawldb
-2019/07/06-22:25:41.666755 c64                Options.table_cache_numshardbits: 6
-2019/07/06-22:25:41.666758 c64                      Options.max_subcompactions: 1
-2019/07/06-22:25:41.666762 c64                  Options.max_background_flushes: -1
-2019/07/06-22:25:41.666765 c64                         Options.WAL_ttl_seconds: 0
-2019/07/06-22:25:41.666768 c64                       Options.WAL_size_limit_MB: 0
-2019/07/06-22:25:41.666772 c64             Options.manifest_preallocation_size: 4194304
-2019/07/06-22:25:41.666775 c64                     Options.is_fd_close_on_exec: 1
-2019/07/06-22:25:41.666778 c64                   Options.advise_random_on_open: 1
-2019/07/06-22:25:41.666782 c64                    Options.db_write_buffer_size: 0
-2019/07/06-22:25:41.666785 c64                    Options.write_buffer_manager: 0000000035BC4150
-2019/07/06-22:25:41.666788 c64         Options.access_hint_on_compaction_start: 1
-2019/07/06-22:25:41.666792 c64  Options.new_table_reader_for_compaction_inputs: 0
-2019/07/06-22:25:41.666795 c64           Options.random_access_max_buffer_size: 1048576
-2019/07/06-22:25:41.666798 c64                      Options.use_adaptive_mutex: 0
-2019/07/06-22:25:41.666801 c64                            Options.rate_limiter: 0000000000000000
-2019/07/06-22:25:41.666805 c64     Options.sst_file_manager.rate_bytes_per_sec: 0
-2019/07/06-22:25:41.666808 c64                       Options.wal_recovery_mode: 2
-2019/07/06-22:25:41.666811 c64                  Options.enable_thread_tracking: 0
-2019/07/06-22:25:41.666815 c64                  Options.enable_pipelined_write: 0
-2019/07/06-22:25:41.666837 c64         Options.allow_concurrent_memtable_write: 1
-2019/07/06-22:25:41.666842 c64      Options.enable_write_thread_adaptive_yield: 1
-2019/07/06-22:25:41.666845 c64             Options.write_thread_max_yield_usec: 100
-2019/07/06-22:25:41.666849 c64            Options.write_thread_slow_yield_usec: 3
-2019/07/06-22:25:41.666852 c64                               Options.row_cache: None
-2019/07/06-22:25:41.666855 c64                              Options.wal_filter: None
-2019/07/06-22:25:41.666859 c64             Options.avoid_flush_during_recovery: 0
-2019/07/06-22:25:41.666862 c64             Options.allow_ingest_behind: 0
-2019/07/06-22:25:41.666865 c64             Options.preserve_deletes: 0
-2019/07/06-22:25:41.666868 c64             Options.two_write_queues: 0
-2019/07/06-22:25:41.666871 c64             Options.manual_wal_flush: 0
-2019/07/06-22:25:41.666875 c64             Options.max_background_jobs: 2
-2019/07/06-22:25:41.666878 c64             Options.max_background_compactions: -1
-2019/07/06-22:25:41.666881 c64             Options.avoid_flush_during_shutdown: 0
-2019/07/06-22:25:41.666884 c64           Options.writable_file_max_buffer_size: 1048576
-2019/07/06-22:25:41.666888 c64             Options.delayed_write_rate : 16777216
-2019/07/06-22:25:41.666891 c64             Options.max_total_wal_size: 0
-2019/07/06-22:25:41.666894 c64             Options.delete_obsolete_files_period_micros: 21600000000
-2019/07/06-22:25:41.666898 c64                   Options.stats_dump_period_sec: 600
-2019/07/06-22:25:41.666901 c64                          Options.max_open_files: -1
-2019/07/06-22:25:41.666904 c64                          Options.bytes_per_sync: 0
-2019/07/06-22:25:41.666908 c64                      Options.wal_bytes_per_sync: 0
-2019/07/06-22:25:41.666911 c64       Options.compaction_readahead_size: 0
-2019/07/06-22:25:41.666914 c64 Compression algorithms supported:
-2019/07/06-22:25:41.666918 c64 	kZSTD supported: 0
-2019/07/06-22:25:41.666921 c64 	kSnappyCompression supported: 0
-2019/07/06-22:25:41.666924 c64 	kBZip2Compression supported: 0
-2019/07/06-22:25:41.666927 c64 	kZlibCompression supported: 0
-2019/07/06-22:25:41.666930 c64 	kLZ4Compression supported: 0
-2019/07/06-22:25:41.666933 c64 	kXpressCompression supported: 0
-2019/07/06-22:25:41.666936 c64 	kLZ4HCCompression supported: 0
-2019/07/06-22:25:41.666939 c64 	kZSTDNotFinalCompression supported: 0
-2019/07/06-22:25:41.666944 c64 Fast CRC32 supported: Supported on x86
-2019/07/06-22:25:41.668036 c64 [c:\users\aretter\code\rocksdb\db\version_set.cc:3085] Recovering from manifest file: MANIFEST-000017
-2019/07/06-22:25:41.668253 c64 [c:\users\aretter\code\rocksdb\db\column_family.cc:475] --------------- Options for column family [default]:
-2019/07/06-22:25:41.668261 c64               Options.comparator: leveldb.BytewiseComparator
-2019/07/06-22:25:41.668264 c64           Options.merge_operator: None
-2019/07/06-22:25:41.668267 c64        Options.compaction_filter: None
-2019/07/06-22:25:41.668270 c64        Options.compaction_filter_factory: None
-2019/07/06-22:25:41.668274 c64         Options.memtable_factory: SkipListFactory
-2019/07/06-22:25:41.668277 c64            Options.table_factory: BlockBasedTable
-2019/07/06-22:25:41.668309 c64            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (0000000035802000)
+2019/07/12-22:50:19.534906 3dcc RocksDB version: 5.14.2
+2019/07/12-22:50:19.534978 3dcc Git sha rocksdb_build_git_sha:@5089e121166c46956a8a21c8ef967f1896c239de@
+2019/07/12-22:50:19.534999 3dcc Compile date Jul  6 2018
+2019/07/12-22:50:19.535013 3dcc DB SUMMARY
+2019/07/12-22:50:19.535289 3dcc CURRENT file:  CURRENT
+2019/07/12-22:50:19.535306 3dcc IDENTITY file:  IDENTITY
+2019/07/12-22:50:19.535407 3dcc MANIFEST file:  MANIFEST-000011 size: 158 Bytes
+2019/07/12-22:50:19.535422 3dcc SST files in C:\Users\Administrator\Desktop\dome\0\crawldb dir, Total Num: 1, files: 000004.sst 
+2019/07/12-22:50:19.535430 3dcc Write Ahead Log file in C:\Users\Administrator\Desktop\dome\0\crawldb: 000012.log size: 136 ; 
+2019/07/12-22:50:19.535439 3dcc                         Options.error_if_exists: 0
+2019/07/12-22:50:19.535540 3dcc                       Options.create_if_missing: 1
+2019/07/12-22:50:19.535547 3dcc                         Options.paranoid_checks: 1
+2019/07/12-22:50:19.535551 3dcc                                     Options.env: 0000000000A8EE20
+2019/07/12-22:50:19.535555 3dcc                                Options.info_log: 0000000035284FC0
+2019/07/12-22:50:19.535558 3dcc                Options.max_file_opening_threads: 16
+2019/07/12-22:50:19.535562 3dcc                              Options.statistics: 0000000000000000
+2019/07/12-22:50:19.535565 3dcc                               Options.use_fsync: 0
+2019/07/12-22:50:19.535568 3dcc                       Options.max_log_file_size: 0
+2019/07/12-22:50:19.535572 3dcc                  Options.max_manifest_file_size: 18446744073709551615
+2019/07/12-22:50:19.535575 3dcc                   Options.log_file_time_to_roll: 0
+2019/07/12-22:50:19.535579 3dcc                       Options.keep_log_file_num: 1000
+2019/07/12-22:50:19.535582 3dcc                    Options.recycle_log_file_num: 0
+2019/07/12-22:50:19.535585 3dcc                         Options.allow_fallocate: 1
+2019/07/12-22:50:19.535589 3dcc                        Options.allow_mmap_reads: 0
+2019/07/12-22:50:19.535592 3dcc                       Options.allow_mmap_writes: 0
+2019/07/12-22:50:19.535595 3dcc                        Options.use_direct_reads: 0
+2019/07/12-22:50:19.535598 3dcc                        Options.use_direct_io_for_flush_and_compaction: 0
+2019/07/12-22:50:19.535602 3dcc          Options.create_missing_column_families: 0
+2019/07/12-22:50:19.535605 3dcc                              Options.db_log_dir: 
+2019/07/12-22:50:19.535608 3dcc                                 Options.wal_dir: C:\Users\Administrator\Desktop\dome\0\crawldb
+2019/07/12-22:50:19.535612 3dcc                Options.table_cache_numshardbits: 6
+2019/07/12-22:50:19.535615 3dcc                      Options.max_subcompactions: 1
+2019/07/12-22:50:19.535619 3dcc                  Options.max_background_flushes: -1
+2019/07/12-22:50:19.535622 3dcc                         Options.WAL_ttl_seconds: 0
+2019/07/12-22:50:19.535625 3dcc                       Options.WAL_size_limit_MB: 0
+2019/07/12-22:50:19.535629 3dcc             Options.manifest_preallocation_size: 4194304
+2019/07/12-22:50:19.535632 3dcc                     Options.is_fd_close_on_exec: 1
+2019/07/12-22:50:19.535635 3dcc                   Options.advise_random_on_open: 1
+2019/07/12-22:50:19.535639 3dcc                    Options.db_write_buffer_size: 0
+2019/07/12-22:50:19.535642 3dcc                    Options.write_buffer_manager: 00000000357741A0
+2019/07/12-22:50:19.535645 3dcc         Options.access_hint_on_compaction_start: 1
+2019/07/12-22:50:19.535649 3dcc  Options.new_table_reader_for_compaction_inputs: 0
+2019/07/12-22:50:19.535652 3dcc           Options.random_access_max_buffer_size: 1048576
+2019/07/12-22:50:19.535655 3dcc                      Options.use_adaptive_mutex: 0
+2019/07/12-22:50:19.535658 3dcc                            Options.rate_limiter: 0000000000000000
+2019/07/12-22:50:19.535662 3dcc     Options.sst_file_manager.rate_bytes_per_sec: 0
+2019/07/12-22:50:19.535665 3dcc                       Options.wal_recovery_mode: 2
+2019/07/12-22:50:19.535668 3dcc                  Options.enable_thread_tracking: 0
+2019/07/12-22:50:19.535690 3dcc                  Options.enable_pipelined_write: 0
+2019/07/12-22:50:19.535695 3dcc         Options.allow_concurrent_memtable_write: 1
+2019/07/12-22:50:19.535698 3dcc      Options.enable_write_thread_adaptive_yield: 1
+2019/07/12-22:50:19.535701 3dcc             Options.write_thread_max_yield_usec: 100
+2019/07/12-22:50:19.535704 3dcc            Options.write_thread_slow_yield_usec: 3
+2019/07/12-22:50:19.535708 3dcc                               Options.row_cache: None
+2019/07/12-22:50:19.535711 3dcc                              Options.wal_filter: None
+2019/07/12-22:50:19.535714 3dcc             Options.avoid_flush_during_recovery: 0
+2019/07/12-22:50:19.535718 3dcc             Options.allow_ingest_behind: 0
+2019/07/12-22:50:19.535721 3dcc             Options.preserve_deletes: 0
+2019/07/12-22:50:19.535724 3dcc             Options.two_write_queues: 0
+2019/07/12-22:50:19.535727 3dcc             Options.manual_wal_flush: 0
+2019/07/12-22:50:19.535730 3dcc             Options.max_background_jobs: 2
+2019/07/12-22:50:19.535733 3dcc             Options.max_background_compactions: -1
+2019/07/12-22:50:19.535737 3dcc             Options.avoid_flush_during_shutdown: 0
+2019/07/12-22:50:19.535740 3dcc           Options.writable_file_max_buffer_size: 1048576
+2019/07/12-22:50:19.535743 3dcc             Options.delayed_write_rate : 16777216
+2019/07/12-22:50:19.535747 3dcc             Options.max_total_wal_size: 0
+2019/07/12-22:50:19.535750 3dcc             Options.delete_obsolete_files_period_micros: 21600000000
+2019/07/12-22:50:19.535753 3dcc                   Options.stats_dump_period_sec: 600
+2019/07/12-22:50:19.535765 3dcc                          Options.max_open_files: -1
+2019/07/12-22:50:19.535770 3dcc                          Options.bytes_per_sync: 0
+2019/07/12-22:50:19.535774 3dcc                      Options.wal_bytes_per_sync: 0
+2019/07/12-22:50:19.535777 3dcc       Options.compaction_readahead_size: 0
+2019/07/12-22:50:19.535781 3dcc Compression algorithms supported:
+2019/07/12-22:50:19.535784 3dcc 	kZSTD supported: 0
+2019/07/12-22:50:19.535788 3dcc 	kSnappyCompression supported: 0
+2019/07/12-22:50:19.535791 3dcc 	kBZip2Compression supported: 0
+2019/07/12-22:50:19.535794 3dcc 	kZlibCompression supported: 0
+2019/07/12-22:50:19.535797 3dcc 	kLZ4Compression supported: 0
+2019/07/12-22:50:19.535800 3dcc 	kXpressCompression supported: 0
+2019/07/12-22:50:19.535803 3dcc 	kLZ4HCCompression supported: 0
+2019/07/12-22:50:19.535806 3dcc 	kZSTDNotFinalCompression supported: 0
+2019/07/12-22:50:19.535814 3dcc Fast CRC32 supported: Supported on x86
+2019/07/12-22:50:19.537156 3dcc [c:\users\aretter\code\rocksdb\db\version_set.cc:3085] Recovering from manifest file: MANIFEST-000011
+2019/07/12-22:50:19.537382 3dcc [c:\users\aretter\code\rocksdb\db\column_family.cc:475] --------------- Options for column family [default]:
+2019/07/12-22:50:19.537392 3dcc               Options.comparator: leveldb.BytewiseComparator
+2019/07/12-22:50:19.537396 3dcc           Options.merge_operator: None
+2019/07/12-22:50:19.537399 3dcc        Options.compaction_filter: None
+2019/07/12-22:50:19.537402 3dcc        Options.compaction_filter_factory: None
+2019/07/12-22:50:19.537405 3dcc         Options.memtable_factory: SkipListFactory
+2019/07/12-22:50:19.537409 3dcc            Options.table_factory: BlockBasedTable
+2019/07/12-22:50:19.537442 3dcc            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (0000000035269C50)
   cache_index_and_filter_blocks: 0
   cache_index_and_filter_blocks_with_high_priority: 0
   pin_l0_filter_and_index_blocks_in_cache: 0
@@ -96,7 +96,7 @@
   hash_index_allow_collision: 1
   checksum: 1
   no_block_cache: 0
-  block_cache: 0000000035B94780
+  block_cache: 0000000035773310
   block_cache_name: LRUCache
   block_cache_options:
     capacity : 8388608
@@ -119,72 +119,72 @@
   format_version: 2
   enable_index_compression: 1
   block_align: 0
-2019/07/06-22:25:41.668340 c64        Options.write_buffer_size: 67108864
-2019/07/06-22:25:41.668345 c64  Options.max_write_buffer_number: 2
-2019/07/06-22:25:41.668349 c64          Options.compression: NoCompression
-2019/07/06-22:25:41.668352 c64                  Options.bottommost_compression: Disabled
-2019/07/06-22:25:41.668355 c64       Options.prefix_extractor: nullptr
-2019/07/06-22:25:41.668358 c64   Options.memtable_insert_with_hint_prefix_extractor: nullptr
-2019/07/06-22:25:41.668362 c64             Options.num_levels: 7
-2019/07/06-22:25:41.668365 c64        Options.min_write_buffer_number_to_merge: 1
-2019/07/06-22:25:41.668368 c64     Options.max_write_buffer_number_to_maintain: 0
-2019/07/06-22:25:41.668372 c64            Options.compression_opts.window_bits: -14
-2019/07/06-22:25:41.668375 c64                  Options.compression_opts.level: -1
-2019/07/06-22:25:41.668378 c64               Options.compression_opts.strategy: 0
-2019/07/06-22:25:41.668381 c64         Options.compression_opts.max_dict_bytes: 0
-2019/07/06-22:25:41.668385 c64         Options.compression_opts.zstd_max_train_bytes: 0
-2019/07/06-22:25:41.668388 c64      Options.level0_file_num_compaction_trigger: 4
-2019/07/06-22:25:41.668391 c64          Options.level0_slowdown_writes_trigger: 20
-2019/07/06-22:25:41.668395 c64              Options.level0_stop_writes_trigger: 36
-2019/07/06-22:25:41.668398 c64                   Options.target_file_size_base: 67108864
-2019/07/06-22:25:41.668401 c64             Options.target_file_size_multiplier: 1
-2019/07/06-22:25:41.668405 c64                Options.max_bytes_for_level_base: 268435456
-2019/07/06-22:25:41.668408 c64 Options.level_compaction_dynamic_level_bytes: 0
-2019/07/06-22:25:41.668411 c64          Options.max_bytes_for_level_multiplier: 10.000000
-2019/07/06-22:25:41.668415 c64 Options.max_bytes_for_level_multiplier_addtl[0]: 1
-2019/07/06-22:25:41.668419 c64 Options.max_bytes_for_level_multiplier_addtl[1]: 1
-2019/07/06-22:25:41.668422 c64 Options.max_bytes_for_level_multiplier_addtl[2]: 1
-2019/07/06-22:25:41.668425 c64 Options.max_bytes_for_level_multiplier_addtl[3]: 1
-2019/07/06-22:25:41.668429 c64 Options.max_bytes_for_level_multiplier_addtl[4]: 1
-2019/07/06-22:25:41.668432 c64 Options.max_bytes_for_level_multiplier_addtl[5]: 1
-2019/07/06-22:25:41.668435 c64 Options.max_bytes_for_level_multiplier_addtl[6]: 1
-2019/07/06-22:25:41.668438 c64       Options.max_sequential_skip_in_iterations: 8
-2019/07/06-22:25:41.668442 c64                    Options.max_compaction_bytes: 1677721600
-2019/07/06-22:25:41.668445 c64                        Options.arena_block_size: 8388608
-2019/07/06-22:25:41.668448 c64   Options.soft_pending_compaction_bytes_limit: 68719476736
-2019/07/06-22:25:41.668452 c64   Options.hard_pending_compaction_bytes_limit: 274877906944
-2019/07/06-22:25:41.668455 c64       Options.rate_limit_delay_max_milliseconds: 100
-2019/07/06-22:25:41.668458 c64                Options.disable_auto_compactions: 0
-2019/07/06-22:25:41.668463 c64                        Options.compaction_style: kCompactionStyleLevel
-2019/07/06-22:25:41.668467 c64                          Options.compaction_pri: kByCompensatedSize
-2019/07/06-22:25:41.668471 c64 Options.compaction_options_universal.size_ratio: 1
-2019/07/06-22:25:41.668474 c64 Options.compaction_options_universal.min_merge_width: 2
-2019/07/06-22:25:41.668477 c64 Options.compaction_options_universal.max_merge_width: 4294967295
-2019/07/06-22:25:41.668481 c64 Options.compaction_options_universal.max_size_amplification_percent: 200
-2019/07/06-22:25:41.668484 c64 Options.compaction_options_universal.compression_size_percent: -1
-2019/07/06-22:25:41.668488 c64 Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
-2019/07/06-22:25:41.668491 c64 Options.compaction_options_fifo.max_table_files_size: 1073741824
-2019/07/06-22:25:41.668495 c64 Options.compaction_options_fifo.allow_compaction: 0
-2019/07/06-22:25:41.668499 c64 Options.compaction_options_fifo.ttl: 0
-2019/07/06-22:25:41.668503 c64                   Options.table_properties_collectors: 
-2019/07/06-22:25:41.668506 c64                   Options.inplace_update_support: 0
-2019/07/06-22:25:41.668509 c64                 Options.inplace_update_num_locks: 10000
-2019/07/06-22:25:41.668513 c64               Options.memtable_prefix_bloom_size_ratio: 0.000000
-2019/07/06-22:25:41.668516 c64   Options.memtable_huge_page_size: 0
-2019/07/06-22:25:41.668519 c64                           Options.bloom_locality: 0
-2019/07/06-22:25:41.668523 c64                    Options.max_successive_merges: 0
-2019/07/06-22:25:41.668526 c64                Options.optimize_filters_for_hits: 0
-2019/07/06-22:25:41.668529 c64                Options.paranoid_file_checks: 0
-2019/07/06-22:25:41.668532 c64                Options.force_consistency_checks: 0
-2019/07/06-22:25:41.668535 c64                Options.report_bg_io_stats: 0
-2019/07/06-22:25:41.668539 c64                               Options.ttl: 0
-2019/07/06-22:25:41.669344 c64 [c:\users\aretter\code\rocksdb\db\version_set.cc:3361] Recovered from manifest file:C:\Users\Administrator\Desktop\dome\0\crawldb/MANIFEST-000017 succeeded,manifest_file_number is 17, next_file_number is 19, last_sequence is 2154, log_number is 0,prev_log_number is 0,max_column_family is 0,min_log_number_to_keep is 0
-2019/07/06-22:25:41.669356 c64 [c:\users\aretter\code\rocksdb\db\version_set.cc:3369] Column family [default] (ID 0), log number is 16
-2019/07/06-22:25:41.669918 c64 EVENT_LOG_v1 {"time_micros": 1562423141669910, "job": 1, "event": "recovery_started", "log_files": [18]}
-2019/07/06-22:25:41.669926 c64 [c:\users\aretter\code\rocksdb\db\db_impl_open.cc:551] Recovering log #18 mode 2
-2019/07/06-22:25:41.672447 c64 EVENT_LOG_v1 {"time_micros": 1562423141672433, "cf_name": "default", "job": 1, "event": "table_file_creation", "file_number": 19, "file_size": 28392, "table_properties": {"data_size": 27163, "index_size": 316, "filter_size": 0, "raw_key_size": 12044, "raw_average_key_size": 44, "raw_value_size": 21119, "raw_average_value_size": 78, "num_data_blocks": 7, "num_entries": 268, "filter_policy_name": "", "kDeletedKeys": "0", "kMergeOperands": "0"}}
-2019/07/06-22:25:41.672566 c64 [c:\users\aretter\code\rocksdb\db\version_set.cc:2847] Creating manifest 20
-2019/07/06-22:25:41.677750 c64 EVENT_LOG_v1 {"time_micros": 1562423141677744, "job": 1, "event": "recovery_finished"}
-2019/07/06-22:25:41.688870 c64 [c:\users\aretter\code\rocksdb\db\db_impl_open.cc:1219] DB pointer 0000000035BE3560
-2019/07/06-22:25:42.666502 3714 [c:\users\aretter\code\rocksdb\db\db_impl.cc:252] Shutdown: canceling all background work
-2019/07/06-22:25:42.689597 3714 [c:\users\aretter\code\rocksdb\db\db_impl.cc:398] Shutdown complete
+2019/07/12-22:50:19.537477 3dcc        Options.write_buffer_size: 67108864
+2019/07/12-22:50:19.537482 3dcc  Options.max_write_buffer_number: 2
+2019/07/12-22:50:19.537485 3dcc          Options.compression: NoCompression
+2019/07/12-22:50:19.537488 3dcc                  Options.bottommost_compression: Disabled
+2019/07/12-22:50:19.537492 3dcc       Options.prefix_extractor: nullptr
+2019/07/12-22:50:19.537495 3dcc   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2019/07/12-22:50:19.537499 3dcc             Options.num_levels: 7
+2019/07/12-22:50:19.537502 3dcc        Options.min_write_buffer_number_to_merge: 1
+2019/07/12-22:50:19.537505 3dcc     Options.max_write_buffer_number_to_maintain: 0
+2019/07/12-22:50:19.537508 3dcc            Options.compression_opts.window_bits: -14
+2019/07/12-22:50:19.537512 3dcc                  Options.compression_opts.level: -1
+2019/07/12-22:50:19.537515 3dcc               Options.compression_opts.strategy: 0
+2019/07/12-22:50:19.537518 3dcc         Options.compression_opts.max_dict_bytes: 0
+2019/07/12-22:50:19.537522 3dcc         Options.compression_opts.zstd_max_train_bytes: 0
+2019/07/12-22:50:19.537525 3dcc      Options.level0_file_num_compaction_trigger: 4
+2019/07/12-22:50:19.537528 3dcc          Options.level0_slowdown_writes_trigger: 20
+2019/07/12-22:50:19.537532 3dcc              Options.level0_stop_writes_trigger: 36
+2019/07/12-22:50:19.537535 3dcc                   Options.target_file_size_base: 67108864
+2019/07/12-22:50:19.537539 3dcc             Options.target_file_size_multiplier: 1
+2019/07/12-22:50:19.537542 3dcc                Options.max_bytes_for_level_base: 268435456
+2019/07/12-22:50:19.537546 3dcc Options.level_compaction_dynamic_level_bytes: 0
+2019/07/12-22:50:19.537549 3dcc          Options.max_bytes_for_level_multiplier: 10.000000
+2019/07/12-22:50:19.537554 3dcc Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2019/07/12-22:50:19.537557 3dcc Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2019/07/12-22:50:19.537560 3dcc Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2019/07/12-22:50:19.537564 3dcc Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2019/07/12-22:50:19.537567 3dcc Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2019/07/12-22:50:19.537570 3dcc Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2019/07/12-22:50:19.537574 3dcc Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2019/07/12-22:50:19.537577 3dcc       Options.max_sequential_skip_in_iterations: 8
+2019/07/12-22:50:19.537580 3dcc                    Options.max_compaction_bytes: 1677721600
+2019/07/12-22:50:19.537584 3dcc                        Options.arena_block_size: 8388608
+2019/07/12-22:50:19.537587 3dcc   Options.soft_pending_compaction_bytes_limit: 68719476736
+2019/07/12-22:50:19.537591 3dcc   Options.hard_pending_compaction_bytes_limit: 274877906944
+2019/07/12-22:50:19.537594 3dcc       Options.rate_limit_delay_max_milliseconds: 100
+2019/07/12-22:50:19.537598 3dcc                Options.disable_auto_compactions: 0
+2019/07/12-22:50:19.537602 3dcc                        Options.compaction_style: kCompactionStyleLevel
+2019/07/12-22:50:19.537606 3dcc                          Options.compaction_pri: kByCompensatedSize
+2019/07/12-22:50:19.537609 3dcc Options.compaction_options_universal.size_ratio: 1
+2019/07/12-22:50:19.537612 3dcc Options.compaction_options_universal.min_merge_width: 2
+2019/07/12-22:50:19.537616 3dcc Options.compaction_options_universal.max_merge_width: 4294967295
+2019/07/12-22:50:19.537619 3dcc Options.compaction_options_universal.max_size_amplification_percent: 200
+2019/07/12-22:50:19.537623 3dcc Options.compaction_options_universal.compression_size_percent: -1
+2019/07/12-22:50:19.537627 3dcc Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2019/07/12-22:50:19.537630 3dcc Options.compaction_options_fifo.max_table_files_size: 1073741824
+2019/07/12-22:50:19.537634 3dcc Options.compaction_options_fifo.allow_compaction: 0
+2019/07/12-22:50:19.537638 3dcc Options.compaction_options_fifo.ttl: 0
+2019/07/12-22:50:19.537642 3dcc                   Options.table_properties_collectors: 
+2019/07/12-22:50:19.537645 3dcc                   Options.inplace_update_support: 0
+2019/07/12-22:50:19.537648 3dcc                 Options.inplace_update_num_locks: 10000
+2019/07/12-22:50:19.537652 3dcc               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2019/07/12-22:50:19.537655 3dcc   Options.memtable_huge_page_size: 0
+2019/07/12-22:50:19.537659 3dcc                           Options.bloom_locality: 0
+2019/07/12-22:50:19.537662 3dcc                    Options.max_successive_merges: 0
+2019/07/12-22:50:19.537665 3dcc                Options.optimize_filters_for_hits: 0
+2019/07/12-22:50:19.537669 3dcc                Options.paranoid_file_checks: 0
+2019/07/12-22:50:19.537672 3dcc                Options.force_consistency_checks: 0
+2019/07/12-22:50:19.537675 3dcc                Options.report_bg_io_stats: 0
+2019/07/12-22:50:19.537678 3dcc                               Options.ttl: 0
+2019/07/12-22:50:19.538523 3dcc [c:\users\aretter\code\rocksdb\db\version_set.cc:3361] Recovered from manifest file:C:\Users\Administrator\Desktop\dome\0\crawldb/MANIFEST-000011 succeeded,manifest_file_number is 11, next_file_number is 13, last_sequence is 1, log_number is 0,prev_log_number is 0,max_column_family is 0,min_log_number_to_keep is 0
+2019/07/12-22:50:19.538537 3dcc [c:\users\aretter\code\rocksdb\db\version_set.cc:3369] Column family [default] (ID 0), log number is 10
+2019/07/12-22:50:19.539047 3dcc EVENT_LOG_v1 {"time_micros": 1562943019539038, "job": 1, "event": "recovery_started", "log_files": [12]}
+2019/07/12-22:50:19.539056 3dcc [c:\users\aretter\code\rocksdb\db\db_impl_open.cc:551] Recovering log #12 mode 2
+2019/07/12-22:50:19.541538 3dcc EVENT_LOG_v1 {"time_micros": 1562943019541519, "cf_name": "default", "job": 1, "event": "table_file_creation", "file_number": 13, "file_size": 1072, "table_properties": {"data_size": 138, "index_size": 28, "filter_size": 0, "raw_key_size": 45, "raw_average_key_size": 45, "raw_value_size": 77, "raw_average_value_size": 77, "num_data_blocks": 1, "num_entries": 1, "filter_policy_name": "", "kDeletedKeys": "0", "kMergeOperands": "0"}}
+2019/07/12-22:50:19.541576 3dcc [c:\users\aretter\code\rocksdb\db\version_set.cc:2847] Creating manifest 14
+2019/07/12-22:50:19.547104 3dcc EVENT_LOG_v1 {"time_micros": 1562943019547097, "job": 1, "event": "recovery_finished"}
+2019/07/12-22:50:19.553244 3dcc [c:\users\aretter\code\rocksdb\db\db_impl_open.cc:1219] DB pointer 0000000035786330
+2019/07/12-22:50:20.536136 16d8 [c:\users\aretter\code\rocksdb\db\db_impl.cc:252] Shutdown: canceling all background work
+2019/07/12-22:50:20.547512 16d8 [c:\users\aretter\code\rocksdb\db\db_impl.cc:398] Shutdown complete

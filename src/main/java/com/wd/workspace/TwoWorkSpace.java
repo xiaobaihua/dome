@@ -16,8 +16,10 @@ public class TwoWorkSpace {
 		final KSDrawler tow = new KSDrawler(pathname, true);
 		for (WdBean bean : CodeBeanList.wdBean) {
 			for (CrawlDatum datum : tow.addSeedAndReturn(bean.getTowUrl())) {
-				datum.url(datum.url().trim());
-				datum.meta("id", CodeBeanList.wdBean.indexOf(bean));
+				if (datum.url().trim() != null) {
+					datum.url();
+					datum.meta("id", CodeBeanList.wdBean.indexOf(bean));
+				}
 			}
 		}
 		tow.start(4);

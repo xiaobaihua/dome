@@ -25,7 +25,7 @@ import java.util.List;
  */
 public class xywy {
 	public static void main(String[] args){
-		ks();
+		yl();
 	}
 
 	public static void yl() {

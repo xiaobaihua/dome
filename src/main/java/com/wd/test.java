@@ -29,7 +29,11 @@ import java.util.List;
  */
 public class test {
 	public static void main(String[] args) {
-		yl(3);
+		yl(5);
+
+//		for (int i = 0; i < 2; i++) {
+//			ks(i);
+//		}
 	}
 
 //	public static void readKS(Integer max) {
@@ -53,10 +57,10 @@ public class test {
 			final XywyAssemble assemble = new XywyAssemble();
 //			final YLAssemble assemble = new YLAssemble();
 
-			outputStream = new FileOutputStream(new File(ConfUtils.getProperties("OutExcelPath")));
+			outputStream = new FileOutputStream(new File(ConfUtils.getProperties("OutExcelPath")+"\\"+String.valueOf(index+1)+".xlsx"));
 			ExcelWriter writer = new ExcelWriter(outputStream, ExcelTypeEnum.XLSX,false);
 			final Sheet sheet = new Sheet(1, 0);
-			sheet.setSheetName("123");
+			sheet.setSheetName(String.valueOf(index + 1));
 			// 保存最终数据
 			final ArrayList<List<String>> strings = new ArrayList<>();
 
@@ -108,7 +112,7 @@ public class test {
 //			final XywyAssemble assemble = new XywyAssemble();
 			final YLAssemble assemble = new YLAssemble();
 
-			outputStream = new FileOutputStream(new File(ConfUtils.getProperties("OutExcelPath")));
+			outputStream = new FileOutputStream(new File(ConfUtils.getProperties("OutExcelPath")+"\\"+String.valueOf(index+1)+"1.xlsx"));
 			ExcelWriter writer = new ExcelWriter(outputStream, ExcelTypeEnum.XLSX,false);
 			final Sheet sheet = new Sheet(1, 0);
 			sheet.setSheetName("123");
