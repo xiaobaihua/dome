@@ -19,7 +19,6 @@ public class FilterCrawler extends BreadthCrawler {
 		super(crawlPath, false);
 		setThreads(100);
 		setResumable(false);
-		getConf().setTopN(50000);
 		getConf().setExecuteInterval(1000);
 		getConf().setConnectTimeout(5000);
 	}

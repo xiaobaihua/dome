@@ -30,11 +30,8 @@ public class KSDrawler extends BreadthCrawler {
 		setResumable(false);
 		setThreads(200);
 		getConf().setTopN(50000);
-		conf.setExecuteInterval(500);
+		conf.setExecuteInterval(1000);
 
-
-
-		
 		conf.setMaxExecuteCount(3000);
 		setMaxExecuteCount(5);
 	}
@@ -44,6 +41,11 @@ public class KSDrawler extends BreadthCrawler {
 
 		// 如果301 , 302就复制meta数据并且添加到下一个任务
 		if (page.code() == 301 || page.code() == 302) {
+			if (l == 0) {
+				this.setThreads(200);
+				this.getConf().setExecuteInterval(500);
+			}
+
 			WdBean bean = CodeBeanList.wdBean.get(Integer.valueOf(page.meta("id")));
 			final String s = page.location();
 			if (Pattern.matches(".*120ask.com/question/[0-9].*", s)) {

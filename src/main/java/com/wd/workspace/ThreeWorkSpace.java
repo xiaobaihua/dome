@@ -17,7 +17,7 @@ public class ThreeWorkSpace {
 	public void threeUrl(String pathname, List<WdBean> beans) throws Exception {
 
 		// 过滤第二个URL
-		final FilterCrawler filter = new FilterCrawler(pathname, true);
+		final FilterCrawler filter = new FilterCrawler(pathname, false);
 		for (WdBean bean : beans) {
 			final CrawlDatums datums = filter.addSeedAndReturn(bean.getThreeUrl());
 			for (CrawlDatum datum : datums) {
