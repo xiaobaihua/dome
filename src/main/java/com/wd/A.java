@@ -51,7 +51,7 @@ public class A {
 			for (int i = 0; i < lists.size(); i++) {
 				final List<WdBean> b = lists.get(i);
 				workSpace = new ThreeWorkSpace();
-				workSpace.threeUrl(String.valueOf(i), b);
+				workSpace.threeUrl("2", b);
 
 				final List<WdBean> beanList = assemble.assemble(b);
 				for (WdBean bean : beanList) {

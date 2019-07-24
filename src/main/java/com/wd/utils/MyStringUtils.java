@@ -243,11 +243,11 @@ public class MyStringUtils {
 			char c = symbol.toCharArray()[0];
 			// 下标为0， 1， 2都有可能是字符， 都剔除
 			if (target.length > 1 && target[0] == c ) {
-				s = s.replaceFirst(String.valueOf(c), "");
+				s = s.replaceFirst("["+String.valueOf(c)+"]", "");
 			} else if (target.length > 2 && target[1] == c) {
-				s = s.replaceFirst(String.valueOf(c), "");
+				s = s.replaceFirst("["+String.valueOf(c)+"]", "");
 			} else if (target.length > 3 &&target[2] == c) {
-				s = s.replaceFirst(String.valueOf(c), "");
+				s = s.replaceFirst("["+String.valueOf(c)+"]", "");
 			}
 		}
 

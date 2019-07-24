@@ -25,7 +25,7 @@ import java.util.List;
  */
 public class xywy {
 	public static void main(String[] args){
-		ks();
+		yl();
 	}
 
 	public static void yl() {
@@ -47,7 +47,7 @@ public class xywy {
 			System.out.println("第一次采集已完结");
 
 
-			twoWorkSpace.work("2");
+			twoWorkSpace.work("3");
 			System.out.println("第二次采集已完结");
 
 

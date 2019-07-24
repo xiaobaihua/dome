@@ -1,9 +1,6 @@
 package com.wd;
 
 
-import java.io.File;
-
-
 /**
  * @author xbh
  * @date 2019年6月14日11:11:57
@@ -12,7 +9,7 @@ import java.io.File;
 public class test {
 	public static void main(String[] args) {
 		A a = new A();
-		a.ks(0);
+ 		a.yl(0);
 
 //		final String user_dir = System.getProperty("user.dir");
 //		// yl(5);
